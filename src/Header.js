@@ -1,6 +1,7 @@
 const Header = function(){
+    const Headerstyle = {textAlign: 'center', color: '#fff', textTransform: 'uppercase',background: '#000',padding: '20px'};
     return(
-      <div class="header">
+      <div className="header" style={Headerstyle}>
         Phone Directory
       </div>
     )
