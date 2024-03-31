@@ -38,6 +38,7 @@ class App extends Component{
           return <div key={sub.id} className='container'>
           <span >{sub.name}</span><br/>
           <span >{sub.phone}</span>
+          <button className='deleteBtn'>Delete</button>
         </div>
         })
       }
