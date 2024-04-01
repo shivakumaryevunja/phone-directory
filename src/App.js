@@ -4,6 +4,9 @@ import './App.css';
 
 
 class App extends Component{
+  deleteHandler(msg){
+    alert(msg);
+  }
   
   render(){
     let subscribers = [
@@ -26,7 +29,7 @@ class App extends Component{
     return(
       
       <div>
-      <Header />
+      <Header heading="Phone Directory" />
       <button>Add</button>
       <div className='container'>
         <span className='nameText'>Name</span><br/>
@@ -38,7 +41,7 @@ class App extends Component{
           return <div key={sub.id} className='container'>
           <span >{sub.name}</span><br/>
           <span >{sub.phone}</span>
-          <button className='deleteBtn'>Delete</button>
+          <button className='deleteBtn' onClick={this.deleteHandler.bind(this,"Delete clicked!")}>Delete</button>
         </div>
         })
       }
