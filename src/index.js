@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import AddSubscriber from './AddSubscribers';
 import reportWebVitals from './reportWebVitals';
+import './common.css'
+import './AddSubscriber.css'
+import './App.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <App />
   </React.StrictMode>
 );
 
